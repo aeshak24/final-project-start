@@ -45,6 +45,7 @@ const Board: React.FC<BoardProps> = (props) => {
                 }}
             >
                 {squares}
+                <header className="App-header">Ocean Game </header>
             </div>
         </DndProvider>
     );
