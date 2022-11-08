@@ -2,14 +2,12 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 
-export function MultipleChoiceQuestion({
-    options,
-    expectedAnswer
+export function AttributeDropDown({
+    attributes
 }: {
-    options: string[];
-    expectedAnswer: string;
+    attributes: string[];
 }): JSX.Element {
-    const [selectedChoice, setSelectedChoice] = useState<string>(options[0]);
+    const [selectedChoice, setSelectedChoice] = useState<string>(attributes[0]);
 
     function updateSelectedChoice(event: React.ChangeEvent<HTMLSelectElement>) {
         setSelectedChoice(event.target.value);
@@ -24,18 +22,14 @@ export function MultipleChoiceQuestion({
                     value={selectedChoice}
                     onChange={updateSelectedChoice}
                 >
-                    {options.map((option: string) => (
-                        <option key={option} value={option}>
-                            {option}
-                        </option>
-                    ))}
+                    <option value="Type">Type</option>
+                    <option value="Size">Size</option>
+                    <option value="Color">Color</option>
+                    <option value="Age">Age</option>
+                    <option value="Hungry">Hungry</option>
+                    <option value="Gills">Gills</option>
                 </Form.Select>
             </Form.Group>
-            <div>
-                {expectedAnswer === selectedChoice
-                    ? "changing your animal"
-                    : "not changing animal "}{" "}
-            </div>
         </div>
     );
 }
