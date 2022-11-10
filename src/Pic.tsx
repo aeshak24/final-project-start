@@ -29,6 +29,12 @@ const Pic: React.FC = () => {
                     width="80"
                     height="80"
                 />
+                <img
+                    src={require("./turtle.jpg")}
+                    // src={require("./bosun_tally.jpg")}
+                    width="80"
+                    height="80"
+                />
             </div>
         </Fragment>
     );
