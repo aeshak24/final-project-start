@@ -24,6 +24,9 @@ const Pic: React.FC = () => {
             >
                 {/*♘*/}
                 <img src={require("./fish.jpg")} width="60" height="60" />
+                <img src={require("./puffer.jpg")} width="60" height="60" />
+                <img src={require("./turtle.jpg")} width="60" height="60" />
+                <img src={require("./dolphin.jpg")} width="60" height="60" />
             </div>
         </Fragment>
     );
