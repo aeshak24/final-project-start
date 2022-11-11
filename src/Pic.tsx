@@ -10,6 +10,12 @@ const Pic: React.FC = () => {
         })
     });
 
+    const [{ draggingfish }, fish] = useDrag({
+        item: { type: ItemTypes.PIC },
+        collect: (monitor) => ({
+            draggingfish: !!monitor.isDragging
+        })
+    });
     return (
         <Fragment>
             <div
@@ -27,6 +33,18 @@ const Pic: React.FC = () => {
                 <img src={require("./puffer.jpg")} width="60" height="60" />
                 <img src={require("./turtle.jpg")} width="60" height="60" />
                 <img src={require("./dolphin.jpg")} width="60" height="60" />
+            </div>
+            <div
+                ref={fish}
+                style={{
+                    opacity: draggingfish ? 1 : 0.5,
+                    fontSize: 50,
+                    fontWeight: "bold",
+                    cursor: "move",
+                    textAlign: "center"
+                }}
+            >
+                <img src={require("./fish.jpg")} width="60" height="60" />
             </div>
         </Fragment>
     );
