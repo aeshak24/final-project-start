@@ -57,18 +57,6 @@ const Pic: React.FC = () => {
                 <img src={require("./dolphin.jpg")} width="60" height="60" />
             </div>
             <div
-                ref={puffer}
-                style={{
-                    opacity: draggingpuffer ? 1 : 0.5,
-                    fontSize: 50,
-                    fontWeight: "bold",
-                    cursor: "move",
-                    textAlign: "center"
-                }}
-            >
-                <img src={require("./puffer.jpg")} width="60" height="60" />
-            </div>
-            <div
                 ref={fish}
                 style={{
                     opacity: draggingfish ? 1 : 0.5,
@@ -79,6 +67,18 @@ const Pic: React.FC = () => {
                 }}
             >
                 <img src={require("./fish.jpg")} width="60" height="60" />
+            </div>
+            <div
+                ref={puffer}
+                style={{
+                    opacity: draggingpuffer ? 1 : 0.5,
+                    fontSize: 50,
+                    fontWeight: "bold",
+                    cursor: "move",
+                    textAlign: "center"
+                }}
+            >
+                <img src={require("./puffer.jpg")} width="60" height="60" />
             </div>
         </Fragment>
     );
