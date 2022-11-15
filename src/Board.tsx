@@ -47,6 +47,7 @@ const Board: React.FC<BoardProps> = (props) => {
             >
                 {squares}
             </div>
+            <header className="App-header"> Ocean </header>
             <AttributeDropDown attributes={["hello"]}></AttributeDropDown>
         </DndProvider>
     );
