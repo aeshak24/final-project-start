@@ -1,10 +1,10 @@
 export type animalType = "fish" | "dolphin" | "turtle";
 
 export interface Animal {
-    size: number;
+    size: string;
     type: animalType;
     color: string;
-    age: number;
+    age: number[];
     hungry: boolean;
     gills: boolean;
 }
