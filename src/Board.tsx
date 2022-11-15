@@ -36,6 +36,7 @@ const Board: React.FC<BoardProps> = (props) => {
     }
     return (
         <DndProvider backend={HTML5Backend}>
+            <header className="App-header"> Ocean game </header>
             <div
                 style={{
                     width: "100%",
@@ -46,7 +47,6 @@ const Board: React.FC<BoardProps> = (props) => {
             >
                 {squares}
             </div>
-            <header className="App-header"> Ocean game </header>
             <AttributeDropDown attributes={["hello"]}></AttributeDropDown>
         </DndProvider>
     );
