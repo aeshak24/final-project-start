@@ -41,12 +41,8 @@ const Pic: React.FC = () => {
                     textAlign: "center"
                 }}
             >
-                {/*♘*/}
-
-                <img src={require("./fish.jpg")} width="60" height="60" />
-                <img src={require("./puffer.jpg")} width="60" height="60" />
-
                 <img src={require("./turtle.jpg")} width="60" height="60" />
+                {/*♘*/}
             </div>
             <div
                 ref={dolphin}
@@ -59,19 +55,6 @@ const Pic: React.FC = () => {
                 }}
             >
                 <img src={require("./dolphin.jpg")} width="60" height="60" />
-
-                <img
-                    src={require("./fish.jpg")}
-                    // src={require("./bosun_tally.jpg")}
-                    width="80"
-                    height="80"
-                />
-                <img
-                    src={require("./turtle.jpg")}
-                    // src={require("./bosun_tally.jpg")}
-                    width="80"
-                    height="80"
-                />
             </div>
             <div
                 ref={puffer}
