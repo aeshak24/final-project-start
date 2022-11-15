@@ -41,8 +41,8 @@ const Pic: React.FC = () => {
                     textAlign: "center"
                 }}
             >
-                {/*♘*/}
                 <img src={require("./turtle.jpg")} width="60" height="60" />
+                {/*♘*/}
             </div>
             <div
                 ref={dolphin}
