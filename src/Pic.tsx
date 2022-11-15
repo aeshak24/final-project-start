@@ -16,6 +16,19 @@ const Pic: React.FC = () => {
             draggingfish: !!monitor.isDragging
         })
     });
+    const [{ draggingdolphin }, dolphin] = useDrag({
+        item: { type: ItemTypes.PIC },
+        collect: (monitor) => ({
+            draggingdolphin: !!monitor.isDragging
+        })
+    });
+
+    const [{ draggingpuffer }, puffer] = useDrag({
+        item: { type: ItemTypes.PIC },
+        collect: (monitor) => ({
+            draggingpuffer: !!monitor.isDragging
+        })
+    });
     return (
         <Fragment>
             <div
@@ -29,24 +42,24 @@ const Pic: React.FC = () => {
                 }}
             >
                 {/*♘*/}
-                <img src={require("./dolphin.jpg")} width="60" height="60" />
+                <img src={require("./turtle.jpg")} width="60" height="60" />
             </div>
             <div
-                ref={drag}
+                ref={dolphin}
                 style={{
-                    opacity: isDragging ? 1 : 0.5,
+                    opacity: draggingdolphin ? 1 : 0.5,
                     fontSize: 50,
                     fontWeight: "bold",
                     cursor: "move",
                     textAlign: "center"
                 }}
             >
-                <img src={require("./fish.jpg")} width="60" height="60" />
+                <img src={require("./dolphin.jpg")} width="60" height="60" />
             </div>
             <div
-                ref={fish}
+                ref={puffer}
                 style={{
-                    opacity: draggingfish ? 1 : 0.5,
+                    opacity: draggingpuffer ? 1 : 0.5,
                     fontSize: 50,
                     fontWeight: "bold",
                     cursor: "move",
@@ -65,7 +78,7 @@ const Pic: React.FC = () => {
                     textAlign: "center"
                 }}
             >
-                <img src={require("./turtle.jpg")} width="60" height="60" />
+                <img src={require("./fish.jpg")} width="60" height="60" />
             </div>
         </Fragment>
     );
