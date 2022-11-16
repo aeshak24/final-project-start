@@ -1,7 +1,7 @@
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-import { makeDolphin, makeTurtle } from "./animalattributes";
+import { makeTurtle } from "./animalattributes";
 
 export function AttributeDropDown({
     attributes
@@ -23,12 +23,14 @@ export function AttributeDropDown({
                     value={selectedChoice}
                     onChange={updateSelectedChoice}
                 >
-                    <option value="Type">Type</option>
-                    <option value="Size">Size</option>
-                    <option value="Color">Color</option>
-                    <option value="Age">Age</option>
-                    <option value="Hungry">Hungry</option>
-                    <option value="Gills">Gills</option>
+                    <option value="Type">Type: {makeTurtle().type}</option>
+                    <option value="Size">Size: {makeTurtle().size}</option>
+                    <option value="Color">Color: {makeTurtle().color}</option>
+                    <option value="Age">Age: {makeTurtle().age}</option>
+                    <option value="Hungry">
+                        Hungry: {makeTurtle().hungry}
+                    </option>
+                    <option value="Gills">Gills: {makeTurtle().gills}</option>
                 </Form.Select>
             </Form.Group>
         </div>
