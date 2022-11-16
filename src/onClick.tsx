@@ -33,18 +33,6 @@ export function revealDropDown(): JSX.Element {
                 )}
             </div>
             <div>
-                <Button onClick={flipVisibility3}>Dolphin</Button>
-                {visible3 && (
-                    <div>
-                        {" "}
-                        <DolphinAttributeDropDown
-                            attributes={["hello"]}
-                        ></DolphinAttributeDropDown>
-                        ;
-                    </div>
-                )}
-            </div>
-            <div>
                 <Button onClick={flipVisibility2}>Fish</Button>
                 {visible2 && (
                     <div>
@@ -52,6 +40,18 @@ export function revealDropDown(): JSX.Element {
                         <FishAttributeDropDown
                             attributes={["hello"]}
                         ></FishAttributeDropDown>
+                        ;
+                    </div>
+                )}
+            </div>
+            <div>
+                <Button onClick={flipVisibility3}>Dolphin</Button>
+                {visible3 && (
+                    <div>
+                        {" "}
+                        <DolphinAttributeDropDown
+                            attributes={["hello"]}
+                        ></DolphinAttributeDropDown>
                         ;
                     </div>
                 )}
