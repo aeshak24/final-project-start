@@ -28,6 +28,9 @@ const renderSquare = (i: number, picPosition: [number, number]) => {
 type BoardProps = {
     picPosition: [number, number];
 };
+const handleClick = () => {
+    console.log("image clicked");
+};
 
 const Board: React.FC<BoardProps> = (props) => {
     const { picPosition } = props;

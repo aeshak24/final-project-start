@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "./constants";
+import { AttributeDropDown } from "./DropDown";
 
 const Pic: React.FC = () => {
     const [{ isDragging }, drag] = useDrag({
