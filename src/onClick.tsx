@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import { AttributeDropDown } from "./DropDown";
+import { DolphinAttributeDropDown } from "./DolphinDropDown";
+import { FishAttributeDropDown } from "./FishDropDown";
+import { TurtleAttributeDropDown } from "./TurtleDropDown";
 
 export function revealDropDown(): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false);
@@ -23,21 +25,9 @@ export function revealDropDown(): JSX.Element {
                 {visible && (
                     <div>
                         {" "}
-                        <AttributeDropDown
+                        <TurtleAttributeDropDown
                             attributes={["hello"]}
-                        ></AttributeDropDown>
-                        ;
-                    </div>
-                )}
-            </div>
-            <div>
-                <Button onClick={flipVisibility2}>Fish</Button>
-                {visible2 && (
-                    <div>
-                        {" "}
-                        <AttributeDropDown
-                            attributes={["hello"]}
-                        ></AttributeDropDown>
+                        ></TurtleAttributeDropDown>
                         ;
                     </div>
                 )}
@@ -47,9 +37,21 @@ export function revealDropDown(): JSX.Element {
                 {visible3 && (
                     <div>
                         {" "}
-                        <AttributeDropDown
+                        <DolphinAttributeDropDown
                             attributes={["hello"]}
-                        ></AttributeDropDown>
+                        ></DolphinAttributeDropDown>
+                        ;
+                    </div>
+                )}
+            </div>
+            <div>
+                <Button onClick={flipVisibility2}>Fish</Button>
+                {visible2 && (
+                    <div>
+                        {" "}
+                        <FishAttributeDropDown
+                            attributes={["hello"]}
+                        ></FishAttributeDropDown>
                         ;
                     </div>
                 )}
