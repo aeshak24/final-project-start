@@ -1,4 +1,6 @@
 import React from "react";
+import ReactDOM, { render } from "react-dom";
+import Board from "./Board";
 import ReactDOM from "react-dom";
 import Board from "./board2";
 import "./index.css";
