@@ -49,7 +49,6 @@ const Board: React.FC<BoardProps> = (props) => {
                 {squares}
             </div>
             <AttributeDropDown attributes={["hello"]}></AttributeDropDown>
-            {revealDropDown()}
         </DndProvider>
     );
 };

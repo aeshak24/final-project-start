@@ -2,6 +2,7 @@ import React from "react";
 import { useDrop } from "react-dnd";
 import { ItemTypes } from "./constants";
 import { canMovePic, movePic } from "./game";
+import { revealDropDown } from "./onClick";
 import Overlay from "./Overlay";
 import Square from "./Square";
 
@@ -37,6 +38,7 @@ const BoardSquare: React.FC<BoardSquareProps> = (props) => {
             {isOver && !canDrop && <Overlay color="red" />}
             {!isOver && canDrop && <Overlay color="yellow" />}
             {isOver && canDrop && <Overlay color="green" />}
+            {revealDropDown()}
         </div>
     );
 };
