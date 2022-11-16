@@ -3,8 +3,6 @@ import Pic from "./Pic";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import BoardSquare from "./BoardSquare";
-import { AttributeDropDown } from "./DropDown";
-import { revealDropDown } from "./onClick";
 
 const renderPiece = (x: number, y: number, [picX, picY]: [number, number]) => {
     if (x === picX && y === picY) {
@@ -48,7 +46,6 @@ const Board: React.FC<BoardProps> = (props) => {
             >
                 {squares}
             </div>
-            <AttributeDropDown attributes={["hello"]}></AttributeDropDown>
         </DndProvider>
     );
 };

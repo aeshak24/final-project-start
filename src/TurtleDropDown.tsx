@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import { makeTurtle } from "./animalattributes";
 
-export function AttributeDropDown({
+export function TurtleAttributeDropDown({
     attributes
 }: {
     attributes: string[];
@@ -16,9 +16,9 @@ export function AttributeDropDown({
 
     return (
         <div>
-            <h3>Animal Attributes</h3>
+            <h3>Turtle Attributes</h3>
             <Form.Group>
-                <Form.Label>Answer List</Form.Label>
+                <Form.Label>Turtle options</Form.Label>
                 <Form.Select
                     value={selectedChoice}
                     onChange={updateSelectedChoice}
@@ -26,7 +26,10 @@ export function AttributeDropDown({
                     <option value="Type">Type: {makeTurtle().type}</option>
                     <option value="Size">Size: {makeTurtle().size}</option>
                     <option value="Color">Color: {makeTurtle().color}</option>
-                    <option value="Age">Age: {makeTurtle().age}</option>
+                    <option value="Age">
+                        Age: {makeTurtle().age[0]}, {makeTurtle().age[1]},
+                        {makeTurtle().age[2]}
+                    </option>
                     <option value="Hungry">
                         Hungry: {makeTurtle().hungry}
                     </option>
