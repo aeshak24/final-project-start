@@ -13,6 +13,9 @@
     }
 }
 
+* {
+    background-color: rgb(40, 113, 172);
+}
 .App-header {
     width: 100%;
     background-color: #4dbff5;
