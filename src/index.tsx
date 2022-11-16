@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM, { render } from "react-dom";
 import Board from "./Board";
 import "./index.css";
 import { observe } from "./game";
