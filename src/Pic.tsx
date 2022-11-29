@@ -31,12 +31,6 @@ const Pic: React.FC = () => {
         })
     });
 
-    const [{ draggingpuffer }, puffer] = useDrag({
-        item: { type: ItemTypes.PIC },
-        collect: (monitor) => ({
-            draggingpuffer: !!monitor.isDragging
-        })
-    });
     return (
         <Fragment>
             <div
