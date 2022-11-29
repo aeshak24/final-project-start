@@ -1,10 +1,10 @@
 import React, { FC, useState } from "react";
 import type { CSSProperties } from "react";
 import { useDrop, XYCoord } from "react-dnd";
-import Pic from "./Pic";
+// import Pic from "./Pic";
 import { ItemTypes } from "./constants";
 import { Button } from "react-bootstrap";
-import { deflate } from "zlib";
+// import { deflate } from "zlib";
 
 const style: CSSProperties = {
     height: "20rem",
@@ -50,7 +50,7 @@ export const dragdrop: FC = () => {
             data-testid="dustbin"
         >
             <Button onClick={resetPiece}>Reset</Button>
-            <Pic top={top} left={left} />
         </div>
     );
 };
+// <Pic top={top} left={left} />
