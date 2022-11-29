@@ -1,6 +1,14 @@
 import React, { Fragment } from "react";
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "./constants";
+import { DolphinAttributeDropDown } from "./DolphinDropDown";
+
+export function print(): void {
+    console.log("clickes");
+    <div>
+        <DolphinAttributeDropDown attributes={[]}></DolphinAttributeDropDown>
+    </div>;
+}
 
 const Pic: React.FC = () => {
     const [{ isDragging }, drag] = useDrag({
@@ -54,7 +62,12 @@ const Pic: React.FC = () => {
                     textAlign: "center"
                 }}
             >
-                <img src={require("./dolphin.jpg")} width="60" height="60" />
+                <img
+                    src={require("./dolphin.jpg")}
+                    onClick={print}
+                    width="60"
+                    height="60"
+                />
             </div>
             <div
                 ref={fish}
