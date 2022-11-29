@@ -73,7 +73,7 @@ const Pic: React.FC = () => {
                     textAlign: "center"
                 }}
             >
-                <img src={require("./fish.jpg")} width="60" height="60" />
+                <img src={require("./fish.jpg")} width="50" height="60" />
             </div>
         </Fragment>
     );
