@@ -34,6 +34,7 @@ export function revealDropDown(): JSX.Element {
                 <Button onClick={flipVisibility2}>Fish</Button>
                 {visible2 && (
                     <div>
+                        {console.log("clicked again")}
                         <FishAttributeDropDown
                             attributes={["hello"]}
                         ></FishAttributeDropDown>
