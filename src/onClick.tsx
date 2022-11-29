@@ -3,7 +3,6 @@ import { Button } from "react-bootstrap";
 import { DolphinAttributeDropDown } from "./DolphinDropDown";
 import { FishAttributeDropDown } from "./FishDropDown";
 import { TurtleAttributeDropDown } from "./TurtleDropDown";
-
 export function revealDropDown(): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false);
     const [visible2, setVisible2] = useState<boolean>(false);
