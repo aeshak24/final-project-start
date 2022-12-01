@@ -60,6 +60,8 @@ const Pic: FC<image> = ({
             <img src={require("./fish.jpg")} style={{ width: "100px" }} />
             <img src={require("./turtle.jpg")} style={{ width: "100px" }} />
             <img src={require("./dolphin.jpg")} style={{ width: "100px" }} />
+            <img src={require("./starfish.jpeg")} style={{ width: "100px" }} />
+            <img src={require("./jellyfish.jpeg")} style={{ width: "100px" }} />
         </div>
     );
 };

@@ -1,4 +1,9 @@
-export type animalType = "fish" | "dolphin" | "turtle";
+export type animalType =
+    | "fish"
+    | "dolphin"
+    | "turtle"
+    | "jellyfish"
+    | "starfish";
 
 export interface Animal {
     size: string;
