@@ -6,7 +6,19 @@ import BoardSquare from "./BoardSquare";
 
 const renderPiece = (x: number, y: number, [picX, picY]: [number, number]) => {
     if (x === picX && y === picY) {
-        return <Pic />;
+        return (
+            <Pic
+                id={""}
+                height={0}
+                width={0}
+                top={0}
+                left={0}
+                angle={0}
+                free={false}
+                reflected={false}
+                path={""}
+            />
+        );
     }
 };
 
