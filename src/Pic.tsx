@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC, Fragment } from "react";
+import React, { CSSProperties, FC } from "react";
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "./constants";
 import { DolphinAttributeDropDown } from "./DolphinDropDown";
