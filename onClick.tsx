@@ -1,8 +1,10 @@
+/* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { DolphinAttributeDropDown } from "./DolphinDropDown";
 import { FishAttributeDropDown } from "./FishDropDown";
 import { TurtleAttributeDropDown } from "./TurtleDropDown";
+
 export function revealDropDown(): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false);
     const [visible2, setVisible2] = useState<boolean>(false);
@@ -34,7 +36,6 @@ export function revealDropDown(): JSX.Element {
                 <Button onClick={flipVisibility2}>Fish</Button>
                 {visible2 && (
                     <div>
-                        {console.log("clicked again")}
                         <FishAttributeDropDown
                             attributes={["hello"]}
                         ></FishAttributeDropDown>
@@ -56,3 +57,4 @@ export function revealDropDown(): JSX.Element {
         </div>
     );
 }
+// deploy comment
