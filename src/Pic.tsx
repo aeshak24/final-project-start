@@ -1,6 +1,7 @@
 import React, { CSSProperties, FC, Fragment } from "react";
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "./constants";
+import { DolphinAttributeDropDown } from "./DolphinDropDown";
 
 export interface image {
     id: string; // unique number for each image to track
@@ -14,6 +15,12 @@ export interface image {
     path: string; // path of the image
 }
 
+export function print(): void {
+    console.log("clicks");
+    <div>
+        <DolphinAttributeDropDown attributes={[]}></DolphinAttributeDropDown>
+    </div>;
+}
 const imageStyle: CSSProperties = {
     position: "absolute",
     color: "white"
@@ -57,7 +64,11 @@ const Pic: FC<image> = ({
                 left: left + "px"
             }}
         >
-            <img src={require("./fish.jpg")} style={{ width: "100px" }} />
+            <img
+                src={require("./fish.jpg")}
+                onClick={print}
+                style={{ width: "100px" }}
+            />
             <img src={require("./turtle.jpg")} style={{ width: "100px" }} />
             <img src={require("./dolphin.jpg")} style={{ width: "100px" }} />
             <img src={require("./starfish.jpeg")} style={{ width: "100px" }} />
