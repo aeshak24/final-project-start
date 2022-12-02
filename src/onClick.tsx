@@ -66,7 +66,7 @@ export function revealDropDown(): JSX.Element {
             </div>
             <div>
                 <Button onClick={flipVisibility4}>Jellyfish</Button>
-                {visible3 && (
+                {visible4 && (
                     <div>
                         <JellyfishAttributeDropDown
                             attributes={["hello"]}
@@ -77,7 +77,7 @@ export function revealDropDown(): JSX.Element {
             </div>
             <div>
                 <Button onClick={flipVisibility5}>Starfish</Button>
-                {visible3 && (
+                {visible5 && (
                     <div>
                         <StarfishAttributeDropDown
                             attributes={["hello"]}

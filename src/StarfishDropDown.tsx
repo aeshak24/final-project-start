@@ -30,7 +30,7 @@ export function StarfishAttributeDropDown({
 
     return (
         <div>
-            <h3>Fish Attributes</h3>
+            <h3>Starfish Attributes</h3>
             <Form.Group>
                 <Form.Label>Fish options</Form.Label>
                 <Form.Select
