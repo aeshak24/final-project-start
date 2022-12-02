@@ -7,6 +7,7 @@ import "./AnimalData";
 import "./AnimalList";
 import "./Animalitems";
 import "./boardReal";
+import "./layout";
 
 const renderPiece = (x: number, y: number, [picX, picY]: [number, number]) => {
     if (x === picX && y === picY) {
