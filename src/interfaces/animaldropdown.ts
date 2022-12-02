@@ -1,4 +1,9 @@
-export type animalType = "fish" | "dolphin" | "turtle";
+export type animalType =
+    | "fish"
+    | "dolphin"
+    | "turtle"
+    | "starfish"
+    | "jellyfish";
 
 export interface Animals {
     type: animalType;
