@@ -11,6 +11,8 @@ export function revealDropDown(): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false);
     const [visible2, setVisible2] = useState<boolean>(false);
     const [visible3, setVisible3] = useState<boolean>(false);
+    const [visible4, setVisible4] = useState<boolean>(false);
+    const [visible5, setVisible5] = useState<boolean>(false);
 
     function flipVisibility(): void {
         setVisible(!visible);
@@ -20,6 +22,12 @@ export function revealDropDown(): JSX.Element {
     }
     function flipVisibility3(): void {
         setVisible3(!visible3);
+    }
+    function flipVisibility4(): void {
+        setVisible4(!visible4);
+    }
+    function flipVisibility5(): void {
+        setVisible5(!visible5);
     }
     return (
         <div>
@@ -57,7 +65,7 @@ export function revealDropDown(): JSX.Element {
                 )}
             </div>
             <div>
-                <Button onClick={flipVisibility3}>Jellyfish</Button>
+                <Button onClick={flipVisibility4}>Jellyfish</Button>
                 {visible3 && (
                     <div>
                         <JellyfishAttributeDropDown
@@ -68,7 +76,7 @@ export function revealDropDown(): JSX.Element {
                 )}
             </div>
             <div>
-                <Button onClick={flipVisibility3}>Starfish</Button>
+                <Button onClick={flipVisibility5}>Starfish</Button>
                 {visible3 && (
                     <div>
                         <StarfishAttributeDropDown
