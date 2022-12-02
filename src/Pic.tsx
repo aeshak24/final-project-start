@@ -5,6 +5,8 @@ import "./AnimalData";
 import "./AnimalList";
 import "./Animalitems";
 import "./boardReal";
+import { DolphinAttributeDropDown } from "./DolphinDropDown";
+import { StarfishAttributeDropDown } from "./StarfishDropDown";
 
 export interface image {
     id: string; // unique number for each image to track x
@@ -16,6 +18,13 @@ export interface image {
     free: boolean; // whether or not image can move freely
     reflected: boolean; // whether or not piece is reflected
     path: string; // path of the image
+}
+
+export function print(): void {
+    console.log("clicks");
+    <div>
+        <DolphinAttributeDropDown attributes={[]}></DolphinAttributeDropDown>
+    </div>;
 }
 
 const imageStyle: CSSProperties = {
@@ -61,9 +70,24 @@ const Pic: FC<image> = ({
                 left: left + "px"
             }}
         >
-            <img src={require("./puffer.jpg")} />
-            <img src={require("./turtle.jpg")} />
+            <img
+                src={require("./starfish.jpeg")}
+                onClick={print}
+                width="60"
+                height="60"
+            />
+            <img
+                src={require("./jellyfish.jpeg")}
+                onClick={print}
+                width="60"
+                height="60"
+            />
         </div>
     );
+    /*
+    <img src={require("./fish.jpg")} />
+    <img src={require("./dolphin.jpg")} />
+    <img src={require("./turtle.jpg")} />
+    */
 };
 export default Pic;
