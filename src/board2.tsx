@@ -3,10 +3,26 @@ import Pic from "./Pic";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import BoardSquare from "./BoardSquare";
+import "./AnimalData";
+import "./AnimalList";
+import "./Animalitems";
+import "./boardReal";
 
 const renderPiece = (x: number, y: number, [picX, picY]: [number, number]) => {
     if (x === picX && y === picY) {
-        return <Pic />;
+        return (
+            <Pic
+                id={""}
+                height={0}
+                width={0}
+                top={0}
+                left={0}
+                angle={0}
+                free={false}
+                reflected={false}
+                path={""}
+            />
+        );
     }
 };
 

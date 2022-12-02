@@ -1,6 +1,10 @@
-import React, { CSSProperties, FC, Fragment } from "react";
+import React, { CSSProperties, FC } from "react";
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "./constants";
+import "./AnimalData";
+import "./AnimalList";
+import "./Animalitems";
+import "./boardReal";
 
 export interface image {
     id: string; // unique number for each image to track
@@ -57,7 +61,7 @@ const Pic: FC<image> = ({
                 left: left + "px"
             }}
         >
-            <img src={require("${image}")} />
+            <img src={require("./puffer.jpg")} />
         </div>
     );
 };
