@@ -12,6 +12,7 @@ function App(): JSX.Element {
                 automatically reload.
             </p>
         </div>
+        /*adding random comment */
     );
 }
 

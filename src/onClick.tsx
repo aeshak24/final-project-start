@@ -4,6 +4,8 @@ import { Button } from "react-bootstrap";
 import { DolphinAttributeDropDown } from "./DolphinDropDown";
 import { FishAttributeDropDown } from "./FishDropDown";
 import { TurtleAttributeDropDown } from "./TurtleDropDown";
+import { JellyfishAttributeDropDown } from "./JellyfishDropDown";
+import { StarfishAttributeDropDown } from "./StarfishDropDown";
 
 export function revealDropDown(): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false);
@@ -50,6 +52,28 @@ export function revealDropDown(): JSX.Element {
                         <DolphinAttributeDropDown
                             attributes={["hello"]}
                         ></DolphinAttributeDropDown>
+                        ;
+                    </div>
+                )}
+            </div>
+            <div>
+                <Button onClick={flipVisibility3}>Jellyfish</Button>
+                {visible3 && (
+                    <div>
+                        <JellyfishAttributeDropDown
+                            attributes={["hello"]}
+                        ></JellyfishAttributeDropDown>
+                        ;
+                    </div>
+                )}
+            </div>
+            <div>
+                <Button onClick={flipVisibility3}>Starfish</Button>
+                {visible3 && (
+                    <div>
+                        <StarfishAttributeDropDown
+                            attributes={["hello"]}
+                        ></StarfishAttributeDropDown>
                         ;
                     </div>
                 )}

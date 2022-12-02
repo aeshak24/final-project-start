@@ -7,7 +7,7 @@ import "./Animalitems";
 import "./boardReal";
 
 export interface image {
-    id: string; // unique number for each image to track
+    id: string; // unique number for each image to track x
     height: number; //height of the image
     width: number; //width of the image
     top: number; // y position of image

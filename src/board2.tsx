@@ -54,7 +54,7 @@ const Board: React.FC<BoardProps> = (props) => {
             <header className="App-header"> Ocean game </header>
             <div
                 style={{
-                    width: "100%",
+                    width: "150%",
                     height: "100%",
                     display: "flex",
                     flexWrap: "wrap"

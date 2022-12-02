@@ -32,3 +32,25 @@ export function makeDolphin(): Animals {
         gills: false
     };
 }
+
+export function makeJellyfish(): Animal {
+    return {
+        type: "jellyfish",
+        size: "large",
+        color: "blue",
+        age: [40, 60, 70],
+        hungry: false,
+        gills: false
+    };
+}
+
+export function makeStarfish(): Animal {
+    return {
+        type: "starfish",
+        size: "large",
+        color: "blue",
+        age: [40, 60, 70],
+        hungry: false,
+        gills: false
+    };
+}
