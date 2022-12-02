@@ -62,6 +62,7 @@ const Pic: FC<image> = ({
             }}
         >
             <img src={require("./puffer.jpg")} />
+            <img src={require("./turtle.jpg")} />
         </div>
     );
 };
