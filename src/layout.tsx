@@ -104,7 +104,7 @@ const Layout = () => {
                                 >
                                     <img
                                         src={require("./turtle.jpg")}
-                                        width="150"
+                                        width="30"
                                         height="40"
                                     />
                                 </Button>

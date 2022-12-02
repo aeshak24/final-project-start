@@ -33,7 +33,7 @@ export function makeDolphin(): Animals {
     };
 }
 
-export function makeJellyfish(): Animal {
+export function makeJellyfish(): Animals {
     return {
         type: "jellyfish",
         size: "large",
@@ -44,7 +44,7 @@ export function makeJellyfish(): Animal {
     };
 }
 
-export function makeStarfish(): Animal {
+export function makeStarfish(): Animals {
     return {
         type: "starfish",
         size: "large",
