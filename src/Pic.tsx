@@ -6,7 +6,6 @@ import "./AnimalList";
 import "./Animalitems";
 import "./boardReal";
 import { DolphinAttributeDropDown } from "./DolphinDropDown";
-import { StarfishAttributeDropDown } from "./StarfishDropDown";
 
 export interface image {
     id: string; // unique number for each image to track x

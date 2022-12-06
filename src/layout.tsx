@@ -6,9 +6,9 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import type { Animal } from "./interfaces/animals";
 import AnimalList from "./AnimalList";
 import Ocean from "./boardReal";
-import "./styles/Layout.css";
-import "./styles/index.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import "./styles/layout.css";
+//import "./styles/index.css";
 
 const oceanImages: string[] = ["empty", "z-style", "suite-style"];
 
@@ -87,7 +87,10 @@ const Layout = () => {
                 >
                     <Container>
                         <Row>
-                            <Button onClick={() => clearOcean()}>
+                            <Button
+                                style={{ backgroundColor: "pink" }}
+                                onClick={() => clearOcean()}
+                            >
                                 Clear Ocean
                             </Button>
                         </Row>
