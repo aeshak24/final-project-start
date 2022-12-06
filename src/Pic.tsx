@@ -2,9 +2,9 @@ import React, { CSSProperties, FC } from "react";
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "./constants";
 import "./AnimalData";
-import "./AnimalList";
-import "./Animalitems";
-import "./boardReal";
+import "./components/AnimalList";
+import "./components/Animalitems";
+import "./components/boardReal";
 import { DolphinAttributeDropDown } from "./DolphinDropDown";
 
 export interface image {

@@ -4,9 +4,9 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import BoardSquare from "./BoardSquare";
 import "./AnimalData";
-import "./AnimalList";
-import "./Animalitems";
-import "./boardReal";
+import "./components/AnimalList";
+import "./components/Animalitems";
+import "./components/boardReal";
 
 const renderPiece = (x: number, y: number, [picX, picY]: [number, number]) => {
     if (x === picX && y === picY) {

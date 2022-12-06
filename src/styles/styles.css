@@ -1,4 +1,4 @@
-#Ocean {
+#board {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-#Animal {
+#room {
     height: 432px;
     width: 684px;
     border: 1px solid black;

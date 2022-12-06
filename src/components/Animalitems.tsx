@@ -1,15 +1,15 @@
 /* eslint-disable no-extra-parens */
 import React, { useEffect, useState } from "react";
 import { useDrag } from "react-dnd";
-import type { Animal } from "./interfaces/animals";
+import type { Animal } from "../interfaces/animals";
 
 interface AnimalItemProps {
     item: Animal;
-    removeFromGame?: (id: string) => void;
+    removeFromOcean?: (id: string) => void;
 }
 
-const AnimalItem = ({ item, removeFromGame }: AnimalItemProps) => {
-    const { id, name, left, top, height, width, color } = item;
+const AnimalItem = ({ item, removeFromOcean }: AnimalItemProps) => {
+    const { id, name, left, top, height, width, color, image } = item;
     const [position, setPosition] = useState({ top: top, left: left });
     const [isHovered, setIsHovered] = useState(false);
 
@@ -29,7 +29,8 @@ const AnimalItem = ({ item, removeFromGame }: AnimalItemProps) => {
             top: id.includes("sea") ? position.top : top,
             height,
             width,
-            color
+            color,
+            image
         },
         collect: (monitor) => ({
             isDragging: !!monitor.isDragging()
@@ -55,6 +56,7 @@ const AnimalItem = ({ item, removeFromGame }: AnimalItemProps) => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
+            <img style={{ width: "100%" }} src={item.image}></img>
             <div style={{ width: "100%", height: "100%" }}>
                 {showDimensionsAndIcon && (
                     <>
@@ -69,7 +71,7 @@ const AnimalItem = ({ item, removeFromGame }: AnimalItemProps) => {
                 {showDimensionsAndIcon && (
                     <p
                         id="remove-button"
-                        onClick={() => removeFromGame && removeFromGame(id)}
+                        onClick={() => removeFromOcean && removeFromOcean(id)}
                     >
                         Remove
                     </p>

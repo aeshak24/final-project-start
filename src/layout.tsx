@@ -4,8 +4,8 @@ import React, { useState, useCallback, useEffect } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import type { Animal } from "./interfaces/animals";
-import AnimalList from "./AnimalList";
-import Ocean from "./boardReal";
+import AnimalList from "./components/AnimalList";
+import Ocean from "./components/boardReal";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./styles/layout.css";
 //import "./styles/index.css";
@@ -74,13 +74,7 @@ const Layout = () => {
     return (
         <DndProvider backend={HTML5Backend}>
             <div id="grid">
-                <div id="logo-container">
-                    <img
-                        src={require("./dolphin.jpg")}
-                        width="150"
-                        height="150"
-                    />
-                </div>
+                <div id="logo-container">THE OCEAN GAME</div>
                 <div
                     id="left-sea-container"
                     style={{ backgroundColor: "purple" }}
@@ -105,11 +99,7 @@ const Layout = () => {
                                     style={{ backgroundColor: "transparent" }}
                                     onClick={() => createNewOcean()}
                                 >
-                                    <img
-                                        src={require("./turtle.jpg")}
-                                        width="150"
-                                        height="40"
-                                    />
+                                    Create Ocean
                                 </Button>
                             </Col>
                             <Col>
