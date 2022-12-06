@@ -1,4 +1,6 @@
 import type { turtle, dolphin } from "./interfaces/animals";
+import TurtleImage from "./assets/turtle.jpg";
+import DolphinImage from "./assets/dolphin.jpg";
 
 const Turtle: turtle = {
     id: "sea-turtle",
@@ -7,7 +9,8 @@ const Turtle: turtle = {
     width: 42 * 3,
     top: 0,
     left: 0,
-    color: "green"
+    color: "green",
+    image: TurtleImage
 };
 
 const Dolphin: dolphin = {
@@ -17,7 +20,8 @@ const Dolphin: dolphin = {
     width: 42 * 3,
     top: 0,
     left: 0,
-    color: "blue"
+    color: "blue",
+    image: DolphinImage
 };
 
 export const animalsreal = [Turtle, Dolphin];

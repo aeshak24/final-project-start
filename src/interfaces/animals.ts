@@ -13,6 +13,7 @@ export interface turtle {
     top: number;
     left: number;
     color: string;
+    image?: string;
 }
 
 export interface dolphin {
@@ -23,5 +24,6 @@ export interface dolphin {
     top: number;
     left: number;
     color: string;
+    image?: string;
 }
 export type Animal = turtle | dolphin;

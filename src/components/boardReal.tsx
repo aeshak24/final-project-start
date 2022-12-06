@@ -4,7 +4,8 @@ import { monitorEventLoopDelay } from "perf_hooks";
 import React, { useState, useCallback, useEffect } from "react";
 import { useDrop, DragSourceMonitor, DragObjectWithType } from "react-dnd";
 import AnimalItem from "./Animalitems";
-import type { Animal } from "./interfaces/animals";
+import type { Animal } from "../interfaces/animals";
+import "../styles/styles.css";
 
 interface OceanProps {
     animalsInOcean: Animal[];
@@ -19,7 +20,7 @@ const Ocean = ({
     addToOcean,
     removeFromOcean
 }: OceanProps) => {
-    const [drop] = useDrop({
+    const [, drop] = useDrop({
         accept: "Animal",
         drop(item: unknown, monitor) {
             const i = item as Animal;
@@ -42,16 +43,29 @@ const Ocean = ({
             canDrop: monitor.canDrop
         })
     });
-
+    /**
+     * make something like styles from AnimalItems
+     * that has CSS stylie ie (width and height)
+     * .
+     * Buttons that increments boardStyles.width or
+     * boardstyles.height
+     *
+     * variable that updates (could be state) the board size
+     *
+     * CSS for the board may no longer be rekevant after
+     */
     return (
         <div id="board">
+            <div ref={drop} id="room"></div>;
             {animalsInOcean.map((a: Animal) => (
-                <AnimalItem key={a.id} item={a} />
+                <AnimalItem
+                    key={a.id}
+                    item={a}
+                    removeFromOcean={removeFromOcean}
+                />
             ))}
         </div>
     );
 };
 
 export default Ocean;
-// <div ref={drop} id="room"></div>
-//removeFromOcean={removeFromOcean}
