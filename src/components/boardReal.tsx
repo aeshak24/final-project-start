@@ -2,7 +2,7 @@
 /* eslint-disable no-extra-parens */
 import { monitorEventLoopDelay } from "perf_hooks";
 import React, { useState, useCallback, useEffect } from "react";
-import { useDrop, DragSourceMonitor, DragObjectWithType } from "react-dnd";
+import { useDrop } from "react-dnd";
 import AnimalItem from "./Animalitems";
 import type { Animal } from "../interfaces/animals";
 import "../styles/styles.css";

@@ -6,9 +6,9 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import type { Animal } from "./interfaces/animals";
 import AnimalList from "./components/AnimalList";
 import Ocean from "./components/boardReal";
+import "./styles/Layout.css";
+import "./styles/index.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import "./styles/layout.css";
-//import "./styles/index.css";
 
 const oceanImages: string[] = ["empty", "z-style", "suite-style"];
 
@@ -67,7 +67,6 @@ const Layout = () => {
         const newOcean = savedOceans[id - 1];
         setanimalsInOcean(newOcean.animal);
     };
-
     React.useEffect(() => {
         console.log(animalsInOcean);
     }, [animalsInOcean]);
@@ -81,10 +80,7 @@ const Layout = () => {
                 >
                     <Container>
                         <Row>
-                            <Button
-                                style={{ backgroundColor: "pink" }}
-                                onClick={() => clearOcean()}
-                            >
+                            <Button onClick={() => clearOcean()}>
                                 Clear Ocean
                             </Button>
                         </Row>
