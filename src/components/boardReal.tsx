@@ -43,7 +43,17 @@ const Ocean = ({
             canDrop: monitor.canDrop
         })
     });
-
+    /**
+     * make something like styles from AnimalItems
+     * that has CSS stylie ie (width and height)
+     * .
+     * Buttons that increments boardStyles.width or
+     * boardstyles.height
+     *
+     * variable that updates (could be state) the board size
+     *
+     * CSS for the board may no longer be rekevant after
+     */
     return (
         <div id="board">
             <div ref={drop} id="room"></div>;
