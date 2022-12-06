@@ -20,7 +20,7 @@ const AnimalItem = ({ item, removeFromGame }: AnimalItemProps) => {
         setPosition({ top: t, left: l });
     }, []);
 
-    const [drag] = useDrag({
+    const [, drag] = useDrag({
         item: {
             type: "Animal",
             id,
@@ -48,12 +48,13 @@ const AnimalItem = ({ item, removeFromGame }: AnimalItemProps) => {
     const showDimensionsAndIcon = isHovered && !id.includes("sea");
 
     return (
-        <div>
-            id = {item.id}
-            style = {styles}
-            ref = {drag}
-            onMouseEnter = {() => setIsHovered(true)}
-            onMouseLeave = {() => setIsHovered(false)}
+        <div
+            id={item.id}
+            style={styles}
+            ref={drag}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
             <div style={{ width: "100%", height: "100%" }}>
                 {showDimensionsAndIcon && (
                     <>
