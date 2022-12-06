@@ -6,6 +6,35 @@ import { useDrop, DragSourceMonitor, DragObjectWithType } from "react-dnd";
 import AnimalItem from "./Animalitems";
 import type { Animal } from "../interfaces/animals";
 import "../styles/styles.css";
+import { Button } from "react-bootstrap";
+
+const boardStyles: Record<string, unknown> = {
+    width: 20,
+    height: 20
+};
+export function increaseSize(): JSX.Element {
+    const [height, setHeight] = useState<number>(400);
+    const [width, setWidth] = useState<number>(600);
+
+    function i(): void {
+        setHeight(height + 10);
+        setWidth(width + 30);
+    }
+    function d(): void {
+        setHeight(height - 10);
+        setWidth(width - 30);
+    }
+    return (
+        <div>
+            <div>
+                <Button onClick={i}> Increase size </Button>
+            </div>
+            <div>
+                <Button onClick={d}> Decrease size </Button>
+            </div>
+        </div>
+    );
+}
 
 interface OceanProps {
     animalsInOcean: Animal[];
@@ -54,8 +83,10 @@ const Ocean = ({
      *
      * CSS for the board may no longer be rekevant after
      */
+
     return (
         <div id="board">
+            <div>{increaseSize()}</div>
             <div ref={drop} id="room"></div>;
             {animalsInOcean.map((a: Animal) => (
                 <AnimalItem

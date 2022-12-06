@@ -77,7 +77,7 @@ const Layout = () => {
                 <div id="logo-container">THE OCEAN GAME</div>
                 <div
                     id="left-sea-container"
-                    style={{ backgroundColor: "purple" }}
+                    style={{ backgroundColor: "grey" }}
                 >
                     <Container>
                         <Row>
