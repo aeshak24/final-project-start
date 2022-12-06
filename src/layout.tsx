@@ -6,8 +6,6 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import type { Animal } from "./interfaces/animals";
 import AnimalList from "./AnimalList";
 import Ocean from "./boardReal";
-import "./styles/Layout.css";
-import "./styles/index.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 
 const oceanImages: string[] = ["empty", "z-style", "suite-style"];
