@@ -18,7 +18,7 @@ const Turtle: turtle = {
     width: 42 * 3,
     top: 0,
     left: 0,
-    color: "green",
+    color: "blue",
     image: TurtleImage
 };
 
