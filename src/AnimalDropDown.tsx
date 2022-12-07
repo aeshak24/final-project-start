@@ -21,11 +21,11 @@ export function AnimalDropDown({
                     value={selectedChoice}
                     onChange={updateSelectedChoice}
                 >
-                    <option value="Turtle"></option>
-                    <option value="Dolphin"></option>{" "}
-                    <option value="Fish"></option>{" "}
-                    <option value="Jellyfish"></option>{" "}
-                    <option value="Starfish"></option>
+                    <option value="turtle"> Turtle </option>
+                    <option value="Dolphin"> Dolphin </option>
+                    <option value="Fish"> Fish </option>
+                    <option value="Jellyfish"> Jellyfish </option>
+                    <option value="Starfish"> Starfish </option>
                 </Form.Select>
             </Form.Group>
         </div>
