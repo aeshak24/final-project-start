@@ -24,8 +24,8 @@ export function AnimalDropDown({
                     <option value="turtle"> Turtle </option>
                     <option value="Dolphin"> Dolphin </option>
                     <option value="Fish"> Fish </option>
-                    <option value="Jellyfish"> Jellyfish </option>
                     <option value="Starfish"> Starfish </option>
+                    <option value="Jellyfish"> Jellyfish </option>
                 </Form.Select>
             </Form.Group>
         </div>
