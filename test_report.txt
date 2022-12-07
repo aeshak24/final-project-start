@@ -8,7 +8,7 @@
       at App (src/App.tsx:6:13)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (61 ms)
+  ✕ renders the course name somewhere (69 ms)
 
   ● renders the course name somewhere
 
@@ -67,28 +67,28 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-------------------------|---------|----------|---------|---------|-------------------
-File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-------------------------|---------|----------|---------|---------|-------------------
-All files               |    2.19 |        0 |    2.63 |    2.22 |                   
- src                    |    3.44 |        0 |    3.84 |     3.5 |                   
-  AnimalData.tsx        |       0 |      100 |     100 |       0 | 5-27              
-  App.tsx               |     100 |      100 |     100 |     100 |                   
-  JellyfishDropDown.tsx |       0 |        0 |       0 |       0 | 10-31             
-  Overlay.tsx           |       0 |      100 |       0 |       0 | 7-8               
-  animalattributes.ts   |       0 |      100 |       0 |       0 | 4-48              
-  layout.tsx            |       0 |        0 |       0 |       0 | 13-112            
- src/components         |       0 |        0 |       0 |       0 |                   
-  AnimalList.tsx        |       0 |      100 |       0 |       0 | 9-13              
-  Animalitems.tsx       |       0 |        0 |       0 |       0 | 11-74             
-  boardReal.tsx         |       0 |        0 |       0 |       0 | 17-61             
- src/interfaces         |       0 |        0 |       0 |       0 |                   
-  animaldropdown.ts     |       0 |        0 |       0 |       0 |                   
-  animals.ts            |       0 |        0 |       0 |       0 |                   
-  image.ts              |       0 |        0 |       0 |       0 |                   
-------------------------|---------|----------|---------|---------|-------------------
+----------------------|---------|----------|---------|---------|-------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------|---------|----------|---------|---------|-------------------
+All files             |    2.08 |        0 |    2.56 |     2.1 |                   
+ src                  |    3.63 |        0 |    4.16 |     3.7 |                   
+  AnimalData.tsx      |       0 |      100 |     100 |       0 | 14-67             
+  AnimalDropDown.tsx  |       0 |      100 |       0 |       0 | 9-15              
+  App.tsx             |     100 |      100 |     100 |     100 |                   
+  Overlay.tsx         |       0 |      100 |       0 |       0 | 7-8               
+  animalattributes.ts |       0 |      100 |       0 |       0 | 4-48              
+  layout.tsx          |       0 |        0 |       0 |       0 | 14-113            
+ src/components       |       0 |        0 |       0 |       0 |                   
+  AnimalList.tsx      |       0 |      100 |       0 |       0 | 9-13              
+  Animalitems.tsx     |       0 |        0 |       0 |       0 | 11-74             
+  boardReal.tsx       |       0 |        0 |       0 |       0 | 11-101            
+ src/interfaces       |       0 |        0 |       0 |       0 |                   
+  animaldropdown.ts   |       0 |        0 |       0 |       0 |                   
+  animals.ts          |       0 |        0 |       0 |       0 |                   
+  image.ts            |       0 |        0 |       0 |       0 |                   
+----------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.677 s
+Time:        2.665 s
 Ran all test suites.
