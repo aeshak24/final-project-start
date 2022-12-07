@@ -5,6 +5,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import type { Animal } from "./interfaces/animals";
 import AnimalList from "./components/AnimalList";
+//import { AnimalDropDown } from "./JellyfishDropDown";
 import Ocean from "./components/boardReal";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./styles/layout.css";
