@@ -5,6 +5,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import type { Animal } from "./interfaces/animals";
 import AnimalList from "./components/AnimalList";
+import { AnimalDropDown } from "./AnimalDropDown";
 import Ocean from "./components/boardReal";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./styles/layout.css";
@@ -77,7 +78,7 @@ const Layout = () => {
                 <div id="logo-container">THE OCEAN GAME</div>
                 <div
                     id="left-sea-container"
-                    style={{ backgroundColor: "purple" }}
+                    style={{ backgroundColor: "grey" }}
                 >
                     <Container>
                         <Row>
@@ -128,6 +129,9 @@ const Layout = () => {
                         removeFromOcean={removeFromOcean}
                     />
                 </div>
+            </div>
+            <div>
+                <AnimalDropDown attributes={[]}></AnimalDropDown>
             </div>
         </DndProvider>
     );

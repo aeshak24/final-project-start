@@ -1,6 +1,15 @@
-import type { turtle, dolphin } from "./interfaces/animals";
+import type {
+    turtle,
+    dolphin,
+    fish,
+    starfish,
+    jellyfish
+} from "./interfaces/animals";
 import TurtleImage from "./assets/turtle.jpg";
 import DolphinImage from "./assets/dolphin.jpg";
+import FishImage from "./assets/fish.jpg";
+import StarfishImage from "./assets/starfish.jpeg";
+import JellyfishImage from "./assets/jellyfish.jpeg";
 
 const Turtle: turtle = {
     id: "sea-turtle",
@@ -24,4 +33,35 @@ const Dolphin: dolphin = {
     image: DolphinImage
 };
 
-export const animalsreal = [Turtle, Dolphin];
+const Fish: fish = {
+    id: "sea-fish",
+    name: "fish",
+    height: 24 * 3,
+    width: 42 * 3,
+    top: 0,
+    left: 0,
+    color: "blue",
+    image: FishImage
+};
+const Starfish: starfish = {
+    id: "sea-starfish",
+    name: "starfish",
+    height: 24 * 3,
+    width: 42 * 3,
+    top: 0,
+    left: 0,
+    color: "blue",
+    image: StarfishImage
+};
+const Jellyfish: jellyfish = {
+    id: "sea-jellyfish",
+    name: "jellyfish",
+    height: 24 * 3,
+    width: 42 * 3,
+    top: 0,
+    left: 0,
+    color: "blue",
+    image: JellyfishImage
+};
+
+export const animalsreal = [Turtle, Dolphin, Fish, Starfish, Jellyfish];
