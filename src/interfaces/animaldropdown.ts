@@ -3,7 +3,8 @@ export type animalType =
     | "dolphin"
     | "turtle"
     | "starfish"
-    | "jellyfish";
+    | "jellyfish"
+    | "seaweed";
 
 export interface Animals {
     type: animalType;

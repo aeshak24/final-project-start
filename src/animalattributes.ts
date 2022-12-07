@@ -54,3 +54,13 @@ export function makeStarfish(): Animals {
         gills: false
     };
 }
+export function makeSeaweed(): Animals {
+    return {
+        type: "seaweed",
+        size: "small",
+        color: "green",
+        age: [5, 10, 15],
+        hungry: true,
+        gills: true
+    };
+}

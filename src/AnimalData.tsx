@@ -3,13 +3,15 @@ import type {
     dolphin,
     fish,
     starfish,
-    jellyfish
+    jellyfish,
+    seaweed
 } from "./interfaces/animals";
 import TurtleImage from "./assets/turtle.jpg";
 import DolphinImage from "./assets/dolphin.jpg";
 import FishImage from "./assets/fish.jpg";
 import StarfishImage from "./assets/starfish.jpeg";
 import JellyfishImage from "./assets/jellyfish.jpeg";
+import SeaweedImage from "./assets/seaweed.jpg";
 
 const Turtle: turtle = {
     id: "sea-turtle",
@@ -63,5 +65,21 @@ const Jellyfish: jellyfish = {
     color: "blue",
     image: JellyfishImage
 };
-
-export const animalsreal = [Turtle, Dolphin, Fish, Starfish, Jellyfish];
+const Seaweed: seaweed = {
+    id: "sea-seaweed",
+    name: "seaweed",
+    height: 24 * 3,
+    width: 42 * 3,
+    top: 0,
+    left: 0,
+    color: "blue",
+    image: SeaweedImage
+};
+export const animalsreal = [
+    Turtle,
+    Dolphin,
+    Fish,
+    Starfish,
+    Jellyfish,
+    Seaweed
+];

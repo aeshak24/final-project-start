@@ -3,7 +3,8 @@ export type animalType =
     | "dolphin"
     | "turtle"
     | "jellyfish"
-    | "starfish";
+    | "starfish"
+    | "seaweed";
 
 export interface turtle {
     id: string;
@@ -56,4 +57,14 @@ export interface jellyfish {
     color: string;
     image?: string;
 }
-export type Animal = turtle | dolphin | jellyfish | starfish | fish;
+export interface seaweed {
+    id: string;
+    name: "seaweed";
+    height: number;
+    width: number;
+    top: number;
+    left: number;
+    color: string;
+    image?: string;
+}
+export type Animal = turtle | dolphin | jellyfish | starfish | fish | seaweed;
