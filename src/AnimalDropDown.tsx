@@ -11,22 +11,7 @@ export function AnimalDropDown({
     function updateSelectedChoice(event: React.ChangeEvent<HTMLSelectElement>) {
         setSelectedChoice(event.target.value);
     }
-    /*
-    function trueOrFalseHungry() {
-        if (makeJellyfish().hungry == true) {
-            return "true";
-        } else {
-            return "false";
-        }
-    }
-    function trueOrFalseGills() {
-        if (makeJellyfish().gills == true) {
-            return "true";
-        } else {
-            return "false";
-        }
-    }
-*/
+
     return (
         <div>
             <h3>Animals</h3>
