@@ -1,11 +1,8 @@
 /* eslint-disable no-extra-parens */
 import React from "react";
-
 import AnimalItem from "./Animalitems";
-
-import type { Animal } from "./interfaces/animals";
-
-import { animalsreal } from "./AnimalData";
+import type { Animal } from "../interfaces/animals";
+import { animalsreal } from "../AnimalData";
 
 // import "./styles.css";
 
