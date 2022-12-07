@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-import { makeJellyfish } from "./animalattributes";
 
-export function JellyfishAttributeDropDown({
+export function AnimalDropDown({
     attributes
 }: {
     attributes: string[];
