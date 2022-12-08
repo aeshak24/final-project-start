@@ -38,6 +38,7 @@ const AnimalItem = ({ item, removeFromOcean }: AnimalItemProps) => {
     });
     const styles: Record<string, unknown> = {
         position: id.includes("sea") ? "static" : "absolute",
+        // position: "absolute",
         left,
         top,
         height: id.includes("sea") ? height / 2 : height,

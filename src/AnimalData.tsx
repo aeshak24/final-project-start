@@ -4,14 +4,22 @@ import type {
     fish,
     starfish,
     jellyfish,
-    seaweed
+    mermaid,
+    whale,
+    shark,
+    crab,
+    octopus
 } from "./interfaces/animals";
 import TurtleImage from "./assets/turtle.jpg";
 import DolphinImage from "./assets/dolphin.jpg";
 import FishImage from "./assets/fish.jpg";
 import StarfishImage from "./assets/starfish.jpeg";
 import JellyfishImage from "./assets/jellyfish.jpeg";
-import SeaweedImage from "./assets/seaweed.jpg";
+import MermaidImage from "./assets/mermaid.jpg";
+import WhaleImage from "./assets/whale.jpg";
+import SharkImage from "./assets/shark.jpg";
+import CrabImage from "./assets/crab.jpg";
+import OctopusImage from "./assets/octopus.jpg";
 
 const Turtle: turtle = {
     id: "sea-turtle",
@@ -65,15 +73,55 @@ const Jellyfish: jellyfish = {
     color: "blue",
     image: JellyfishImage
 };
-const Seaweed: seaweed = {
-    id: "sea-seaweed",
-    name: "seaweed",
+const Mermaid: mermaid = {
+    id: "sea-mermaid",
+    name: "mermaid",
     height: 24 * 3,
     width: 42 * 3,
     top: 0,
     left: 0,
     color: "blue",
-    image: SeaweedImage
+    image: MermaidImage
+};
+const Whale: whale = {
+    id: "sea-whale",
+    name: "whale",
+    height: 24 * 3,
+    width: 42 * 3,
+    top: 0,
+    left: 0,
+    color: "blue",
+    image: WhaleImage
+};
+const Shark: shark = {
+    id: "sea-shark",
+    name: "shark",
+    height: 24 * 3,
+    width: 42 * 3,
+    top: 0,
+    left: 0,
+    color: "blue",
+    image: SharkImage
+};
+const Crab: crab = {
+    id: "sea-crab",
+    name: "crab",
+    height: 24 * 3,
+    width: 42 * 3,
+    top: 0,
+    left: 0,
+    color: "blue",
+    image: CrabImage
+};
+const Octopus: octopus = {
+    id: "sea-octopus",
+    name: "octopus",
+    height: 24 * 3,
+    width: 42 * 3,
+    top: 0,
+    left: 0,
+    color: "blue",
+    image: OctopusImage
 };
 export const animalsreal = [
     Turtle,
@@ -81,5 +129,9 @@ export const animalsreal = [
     Fish,
     Starfish,
     Jellyfish,
-    Seaweed
+    Mermaid,
+    Whale,
+    Shark,
+    Crab,
+    Octopus
 ];

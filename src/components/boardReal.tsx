@@ -9,9 +9,10 @@ import "../styles/styles.css";
 import { Button } from "react-bootstrap";
 
 const boardStyles: Record<string, unknown> = {
-    width: 20,
-    height: 20
+    width: 40,
+    height: 40
 };
+
 export function increaseSize(
     height: number,
     width: number,
@@ -96,7 +97,6 @@ const Ocean = ({
                 id="room"
                 style={{ width: width, height: height }}
             ></div>
-            ;
             {animalsInOcean.map((a: Animal) => (
                 <AnimalItem
                     key={a.id}
