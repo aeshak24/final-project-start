@@ -1,10 +1,12 @@
+/*
 export type animalType =
     | "fish"
     | "dolphin"
     | "turtle"
     | "jellyfish"
-    | "starfish";
-
+    | "starfish"
+    | "seaweed";
+*/
 export interface turtle {
     id: string;
     name: "turtle";
@@ -56,4 +58,64 @@ export interface jellyfish {
     color: string;
     image?: string;
 }
-export type Animal = turtle | dolphin | jellyfish | starfish | fish;
+export interface mermaid {
+    id: string;
+    name: "mermaid";
+    height: number;
+    width: number;
+    top: number;
+    left: number;
+    color: string;
+    image?: string;
+}
+export interface whale {
+    id: string;
+    name: "whale";
+    height: number;
+    width: number;
+    top: number;
+    left: number;
+    color: string;
+    image?: string;
+}
+export interface shark {
+    id: string;
+    name: "shark";
+    height: number;
+    width: number;
+    top: number;
+    left: number;
+    color: string;
+    image?: string;
+}
+export interface crab {
+    id: string;
+    name: "crab";
+    height: number;
+    width: number;
+    top: number;
+    left: number;
+    color: string;
+    image?: string;
+}
+export interface octopus {
+    id: string;
+    name: "octopus";
+    height: number;
+    width: number;
+    top: number;
+    left: number;
+    color: string;
+    image?: string;
+}
+export type Animal =
+    | turtle
+    | dolphin
+    | jellyfish
+    | starfish
+    | fish
+    | mermaid
+    | whale
+    | shark
+    | crab
+    | octopus;
