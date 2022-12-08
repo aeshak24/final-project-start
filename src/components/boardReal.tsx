@@ -30,10 +30,10 @@ export function increaseSize(
     return (
         <div>
             <div>
-                <Button onClick={i}> Increase board size </Button>
+                <Button onClick={i}> Increase ocean size </Button>
             </div>
             <div>
-                <Button onClick={d}> Decrease board size </Button>
+                <Button onClick={d}> Decrease ocean size </Button>
             </div>
         </div>
     );
