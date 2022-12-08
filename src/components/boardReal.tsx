@@ -30,10 +30,10 @@ export function increaseSize(
     return (
         <div>
             <div>
-                <Button onClick={i}> Increase size </Button>
+                <Button onClick={i}> Increase board size </Button>
             </div>
             <div>
-                <Button onClick={d}> Decrease size </Button>
+                <Button onClick={d}> Decrease board size </Button>
             </div>
         </div>
     );
