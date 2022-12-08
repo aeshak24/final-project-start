@@ -9,8 +9,8 @@ import "../styles/styles.css";
 import { Button } from "react-bootstrap";
 
 const boardStyles: Record<string, unknown> = {
-    width: 40,
-    height: 40
+    width: 50,
+    height: 50
 };
 
 export function increaseSize(
