@@ -9,8 +9,8 @@ import "../styles/styles.css";
 import { Button } from "react-bootstrap";
 
 const boardStyles: Record<string, unknown> = {
-    width: 40,
-    height: 40
+    width: 50,
+    height: 50
 };
 
 export function increaseSize(
@@ -77,17 +77,6 @@ const Ocean = ({
             canDrop: monitor.canDrop
         })
     });
-    /**
-     * make something like styles from AnimalItems
-     * that has CSS stylie ie (width and height)
-     * .
-     * Buttons that increments boardStyles.width or
-     * boardstyles.height
-     *
-     * variable that updates (could be state) the board size
-     *
-     * CSS for the board may no longer be rekevant after
-     */
 
     return (
         <div id="board">
@@ -109,3 +98,4 @@ const Ocean = ({
 };
 
 export default Ocean;
+// comment
