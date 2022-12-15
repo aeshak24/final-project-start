@@ -1,11 +1,8 @@
-/* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { DolphinAttributeDropDown } from "./DolphinDropDown";
 import { FishAttributeDropDown } from "./FishDropDown";
 import { TurtleAttributeDropDown } from "./TurtleDropDown";
-import { JellyfishAttributeDropDown } from "./JellyfishDropDown";
-import { StarfishAttributeDropDown } from "./StarfishDropDown";
 
 export function revealDropDown(): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false);
@@ -27,6 +24,7 @@ export function revealDropDown(): JSX.Element {
                 <Button onClick={flipVisibility}>Turtle</Button>
                 {visible && (
                     <div>
+                        {" "}
                         <TurtleAttributeDropDown
                             attributes={["hello"]}
                         ></TurtleAttributeDropDown>
@@ -38,6 +36,7 @@ export function revealDropDown(): JSX.Element {
                 <Button onClick={flipVisibility2}>Fish</Button>
                 {visible2 && (
                     <div>
+                        {" "}
                         <FishAttributeDropDown
                             attributes={["hello"]}
                         ></FishAttributeDropDown>
@@ -49,6 +48,7 @@ export function revealDropDown(): JSX.Element {
                 <Button onClick={flipVisibility3}>Dolphin</Button>
                 {visible3 && (
                     <div>
+                        {" "}
                         <DolphinAttributeDropDown
                             attributes={["hello"]}
                         ></DolphinAttributeDropDown>
@@ -56,29 +56,6 @@ export function revealDropDown(): JSX.Element {
                     </div>
                 )}
             </div>
-            <div>
-                <Button onClick={flipVisibility3}>Jellyfish</Button>
-                {visible3 && (
-                    <div>
-                        <JellyfishAttributeDropDown
-                            attributes={["hello"]}
-                        ></JellyfishAttributeDropDown>
-                        ;
-                    </div>
-                )}
-            </div>
-            <div>
-                <Button onClick={flipVisibility3}>Starfish</Button>
-                {visible3 && (
-                    <div>
-                        <StarfishAttributeDropDown
-                            attributes={["hello"]}
-                        ></StarfishAttributeDropDown>
-                        ;
-                    </div>
-                )}
-            </div>
         </div>
     );
 }
-// deploy comment

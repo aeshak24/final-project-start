@@ -13,21 +13,6 @@ export function FishAttributeDropDown({
         setSelectedChoice(event.target.value);
     }
 
-    function trueOrFalseHungry() {
-        if (makeFish().hungry == true) {
-            return "true";
-        } else {
-            return "false";
-        }
-    }
-    function trueOrFalseGills() {
-        if (makeFish().gills == true) {
-            return "true";
-        } else {
-            return "false";
-        }
-    }
-
     return (
         <div>
             <h3>Fish Attributes</h3>
@@ -44,10 +29,8 @@ export function FishAttributeDropDown({
                         Age: {makeFish().age[0]}, {makeFish().age[1]},
                         {makeFish().age[2]}
                     </option>
-                    <option value="Hungry">
-                        Hungry: {trueOrFalseHungry()}
-                    </option>
-                    <option value="Gills">Gills: {trueOrFalseGills()}</option>
+                    <option value="Hungry">Hungry: {makeFish().hungry}</option>
+                    <option value="Gills">Gills: {makeFish().gills}</option>
                 </Form.Select>
             </Form.Group>
         </div>

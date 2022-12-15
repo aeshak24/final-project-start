@@ -14,21 +14,6 @@ export function TurtleAttributeDropDown({
         setSelectedChoice(event.target.value);
     }
 
-    function trueOrFalseHungry() {
-        if (makeTurtle().hungry == true) {
-            return "true";
-        } else {
-            return "false";
-        }
-    }
-    function trueOrFalseGills() {
-        if (makeTurtle().gills == true) {
-            return "true";
-        } else {
-            return "false";
-        }
-    }
-
     return (
         <div>
             <h3>Turtle Attributes</h3>
@@ -46,9 +31,9 @@ export function TurtleAttributeDropDown({
                         {makeTurtle().age[2]}
                     </option>
                     <option value="Hungry">
-                        Hungry: {trueOrFalseHungry()}
+                        Hungry: {makeTurtle().hungry}
                     </option>
-                    <option value="Gills">Gills: {trueOrFalseGills()}</option>
+                    <option value="Gills">Gills: {makeTurtle().gills}</option>
                 </Form.Select>
             </Form.Group>
         </div>

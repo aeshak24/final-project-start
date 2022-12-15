@@ -1,64 +1,87 @@
-import React, { CSSProperties, FC } from "react";
+import React, { Fragment } from "react";
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "./constants";
 
-export interface image {
-    id: string; // unique number for each image to track x
-    height: number; //height of the image
-    width: number; //width of the image
-    top: number; // y position of image
-    left: number; // x position of image
-    angle: number; // rotation used for margin of error
-    free: boolean; // whether or not image can move freely
-    reflected: boolean; // whether or not piece is reflected
-    path: string; // path of the image
-}
-
-const imageStyle: CSSProperties = {
-    position: "absolute",
-    color: "white"
-};
-
-const Pic: FC<image> = ({
-    id,
-    height,
-    width,
-    top,
-    left,
-    angle,
-    free,
-    reflected,
-    path
-}) => {
+const Pic: React.FC = () => {
     const [{ isDragging }, drag] = useDrag({
-        item: {
-            type: ItemTypes.PIC,
-            id: id,
-            height: height,
-            width: width,
-            top: top,
-            left: left,
-            angle: angle,
-            free: free,
-            reflected: reflected,
-            path: path
-        },
+        item: { type: ItemTypes.PIC },
         collect: (monitor) => ({
             isDragging: !!monitor.isDragging
         })
     });
+
+    const [{ draggingfish }, fish] = useDrag({
+        item: { type: ItemTypes.PIC },
+        collect: (monitor) => ({
+            draggingfish: !!monitor.isDragging
+        })
+    });
+    const [{ draggingdolphin }, dolphin] = useDrag({
+        item: { type: ItemTypes.PIC },
+        collect: (monitor) => ({
+            draggingdolphin: !!monitor.isDragging
+        })
+    });
+
+    const [{ draggingpuffer }, puffer] = useDrag({
+        item: { type: ItemTypes.PIC },
+        collect: (monitor) => ({
+            draggingpuffer: !!monitor.isDragging
+        })
+    });
     return (
-        <div
-            ref={drag}
-            style={{
-                ...imageStyle,
-                opacity: isDragging ? 1 : 0.5,
-                top: top + "px",
-                left: left + "px"
-            }}
-        >
-            <img src={require("./puffer.jpg")} />
-        </div>
+        <Fragment>
+            <div
+                ref={drag}
+                style={{
+                    opacity: isDragging ? 1 : 0.5,
+                    fontSize: 50,
+                    fontWeight: "bold",
+                    cursor: "move",
+                    textAlign: "center"
+                }}
+            >
+                <img src={require("./turtle.jpg")} width="60" height="60" />
+                {/*♘*/}
+            </div>
+            <div
+                ref={dolphin}
+                style={{
+                    opacity: draggingdolphin ? 1 : 0.5,
+                    fontSize: 50,
+                    fontWeight: "bold",
+                    cursor: "move",
+                    textAlign: "center"
+                }}
+            >
+                <img src={require("./dolphin.jpg")} width="60" height="60" />
+            </div>
+            <div
+                ref={fish}
+                style={{
+                    opacity: draggingfish ? 1 : 0.5,
+                    fontSize: 50,
+                    fontWeight: "bold",
+                    cursor: "move",
+                    textAlign: "center"
+                }}
+            >
+                <img src={require("./fish.jpg")} width="60" height="60" />
+            </div>
+            <div
+                ref={puffer}
+                style={{
+                    opacity: draggingpuffer ? 1 : 0.5,
+                    fontSize: 50,
+                    fontWeight: "bold",
+                    cursor: "move",
+                    textAlign: "center"
+                }}
+            >
+                <img src={require("./puffer.jpg")} width="60" height="60" />
+            </div>
+        </Fragment>
     );
 };
+
 export default Pic;

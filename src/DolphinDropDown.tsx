@@ -13,21 +13,6 @@ export function DolphinAttributeDropDown({
         setSelectedChoice(event.target.value);
     }
 
-    function trueOrFalseHungry() {
-        if (makeDolphin().hungry == true) {
-            return "true";
-        } else {
-            return "false";
-        }
-    }
-    function trueOrFalseGills() {
-        if (makeDolphin().gills == true) {
-            return "true";
-        } else {
-            return "false";
-        }
-    }
-
     return (
         <div>
             <h3>Dolphin Attributes</h3>
@@ -45,9 +30,9 @@ export function DolphinAttributeDropDown({
                         {makeDolphin().age[2]}
                     </option>
                     <option value="Hungry">
-                        Hungry: {trueOrFalseHungry()}
+                        Hungry: {makeDolphin().hungry}
                     </option>
-                    <option value="Gills">Gills: {trueOrFalseGills()}</option>
+                    <option value="Gills">Gills: {makeDolphin().gills}</option>
                 </Form.Select>
             </Form.Group>
         </div>

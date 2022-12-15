@@ -30,7 +30,7 @@ export function JellyfishAttributeDropDown({
 
     return (
         <div>
-            <h3>Fish Attributes</h3>
+            <h3>Jellyfish Attributes</h3>
             <Form.Group>
                 <Form.Label>Fish options</Form.Label>
                 <Form.Select

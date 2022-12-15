@@ -6,19 +6,7 @@ import BoardSquare from "./BoardSquare";
 
 const renderPiece = (x: number, y: number, [picX, picY]: [number, number]) => {
     if (x === picX && y === picY) {
-        return (
-            <Pic
-                id={""}
-                height={0}
-                width={0}
-                top={0}
-                left={0}
-                angle={0}
-                free={false}
-                reflected={false}
-                path={""}
-            />
-        );
+        return <Pic />;
     }
 };
 
@@ -50,14 +38,13 @@ const Board: React.FC<BoardProps> = (props) => {
             <header className="App-header"> Ocean game </header>
             <div
                 style={{
-                    width: "150%",
+                    width: "100%",
                     height: "100%",
                     display: "flex",
                     flexWrap: "wrap"
                 }}
             >
                 {squares}
-                <header className="App-header">Ocean Game </header>
             </div>
         </DndProvider>
     );

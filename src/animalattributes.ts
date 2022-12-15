@@ -1,6 +1,6 @@
-import { Animal } from "./interfaces/animals";
+import { Animals } from "./interfaces/animaldropdown";
 
-export function makeTurtle(): Animal {
+export function makeTurtle(): Animals {
     return {
         type: "turtle",
         size: "medium",
@@ -11,7 +11,7 @@ export function makeTurtle(): Animal {
     };
 }
 
-export function makeFish(): Animal {
+export function makeFish(): Animals {
     return {
         type: "fish",
         size: "small",
@@ -22,7 +22,7 @@ export function makeFish(): Animal {
     };
 }
 
-export function makeDolphin(): Animal {
+export function makeDolphin(): Animals {
     return {
         type: "dolphin",
         size: "large",
@@ -33,7 +33,7 @@ export function makeDolphin(): Animal {
     };
 }
 
-export function makeJellyfish(): Animal {
+export function makeJellyfish(): Animals {
     return {
         type: "jellyfish",
         size: "large",
@@ -44,7 +44,7 @@ export function makeJellyfish(): Animal {
     };
 }
 
-export function makeStarfish(): Animal {
+export function makeStarfish(): Animals {
     return {
         type: "starfish",
         size: "large",
@@ -52,5 +52,15 @@ export function makeStarfish(): Animal {
         age: [40, 60, 70],
         hungry: false,
         gills: false
+    };
+}
+export function makeSeaweed(): Animals {
+    return {
+        type: "seaweed",
+        size: "small",
+        color: "green",
+        age: [5, 10, 15],
+        hungry: true,
+        gills: true
     };
 }
